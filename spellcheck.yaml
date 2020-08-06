@@ -22,11 +22,10 @@ matrix:
   sources:
   - '**/*.json'
   expect_match: false
-  aspell:
-    add-extra-dicts:
+  dictionary:
+    wordlists:
     - wordlist_pt.txt
     - wordlist_en.txt
-    
 #     output: wordlist.dic
 #     encoding: utf-8
   pipeline:
