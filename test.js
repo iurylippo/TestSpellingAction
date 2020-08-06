@@ -1,2 +1,1 @@
-Eita
-Pegou
+let pegou = null;
