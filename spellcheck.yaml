@@ -22,8 +22,7 @@ matrix:
   sources:
   - 'lang/**/pt.json'
   expect_match: false
-  aspell:
-    lang: pt
+  
   dictionary:
     wordlists:
     - wordlist_pt.txt
