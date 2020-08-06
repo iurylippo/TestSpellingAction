@@ -8,7 +8,7 @@ matrix:
   dictionary:
     wordlists:
     - wordlist_en.txt
-    output: wordlist.dic
+    output: wordlist_en.dic
     encoding: utf-8
   pipeline:
   - pyspelling.filters.javascript:
