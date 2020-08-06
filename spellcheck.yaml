@@ -1,7 +1,7 @@
 matrix:
 - name: Json
   sources:
-  - '**/*.json'
+  - 'lang/**/en.json'
   expect_match: false
   aspell:
     lang: en
