@@ -17,4 +17,4 @@ matrix:
       block_comments: true
       group_comments: false
       decode_escapes: true
-      strings: false
+      strings: true
