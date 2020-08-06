@@ -18,3 +18,22 @@ matrix:
       group_comments: false
       decode_escapes: true
       strings: true
+- name: Json
+  sources:
+  - '**/*.json'
+  expect_match: false
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - wordlist.txt
+    output: wordlist.dic
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.javascript:
+      jsdocs: false
+      line_comments: false
+      block_comments: false
+      group_comments: false
+      decode_escapes: true
+      strings: true
