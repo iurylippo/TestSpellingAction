@@ -1,26 +1,6 @@
 matrix:
-# - name: JavaScript
-#   sources:
-#   - '**/*.js'
-#   expect_match: false
-#   aspell:
-#     lang: en
-#   dictionary:
-#     wordlists:
-#     - wordlist.txt
-#     output: wordlist.dic
-#     encoding: utf-8
-#   pipeline:
-#   - pyspelling.filters.javascript:
-#       jsdocs: true
-#       line_comments: true
-#       block_comments: true
-#       group_comments: false
-#       decode_escapes: true
-#       strings: true
 - name: Json EN
   sources:
-#   - '**/pt_br.json'
   - '**/*.json'
   expect_match: false
   aspell:
@@ -30,17 +10,6 @@ matrix:
     - wordlist.txt
     output: wordlist.dic
     encoding: utf-8
-    
-#     - wordlist_pt.txt
-#     output: wordlist_pt.dic
-    
-#     add-extra-dicts:
-#     - wordlist_en.dic
-#     - wordlist_en.dic
-    
-    
-#     output: wordlist.dic
-    
   pipeline:
   - pyspelling.filters.javascript:
       jsdocs: false
