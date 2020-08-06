@@ -1,1 +1,6 @@
-
+{
+  "page" : {
+    "well_come": "hello",
+    "morning": "good morning"
+  }
+}
