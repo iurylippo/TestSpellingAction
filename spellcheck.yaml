@@ -20,7 +20,8 @@ matrix:
 #       strings: true
 - name: Json
   sources:
-  - '**/*.json'
+  - '**/pt_br.json'
+  - '**/en.json'
   expect_match: false
   dictionary:
     wordlists:
