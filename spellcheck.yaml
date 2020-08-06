@@ -18,17 +18,19 @@ matrix:
 #       group_comments: false
 #       decode_escapes: true
 #       strings: true
-- name: Json
+- name: Json EN
   sources:
-  - '**/pt_br.json'
+#   - '**/pt_br.json'
   - '**/en.json'
   expect_match: false
   dictionary:
     wordlists:
     - wordlist_en.txt
     output: wordlist_en.dic
-    - wordlist_pt.txt
-    output: wordlist_pt.dic
+    encoding: utf-8
+    
+#     - wordlist_pt.txt
+#     output: wordlist_pt.dic
     
 #     add-extra-dicts:
 #     - wordlist_en.dic
@@ -36,7 +38,7 @@ matrix:
     
     
 #     output: wordlist.dic
-#     encoding: utf-8
+    
   pipeline:
   - pyspelling.filters.javascript:
       jsdocs: false
