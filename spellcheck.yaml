@@ -1,14 +1,33 @@
 matrix:
-- name: Json
+- name: Json en
   sources:
   - 'lang/**/en.json'
   expect_match: false
-#   aspell:
-#     lang: en
+  aspell:
+    lang: en
   dictionary:
     wordlists:
     - wordlist_en.txt
     output: wordlist_en.dic
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.javascript:
+      jsdocs: false
+      line_comments: false
+      block_comments: false
+      group_comments: false
+      decode_escapes: true
+      strings: true
+- name: Json pt
+  sources:
+  - 'lang/**/pt.json'
+  expect_match: false
+  aspell:
+    lang: pt
+  dictionary:
+    wordlists:
+    - wordlist_pt.txt
+    output: wordlist_pt.dic
     encoding: utf-8
   pipeline:
   - pyspelling.filters.javascript:
