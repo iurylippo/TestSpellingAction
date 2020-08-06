@@ -1,0 +1,14 @@
+name: Spelling Internalization
+on:
+  pull_request:
+    branches:
+      - develop
+      - master
+jobs:
+  check:
+    steps:
+      - name: Checkout to branch commit
+        uses: actions/checkout@v2
+        
+      - name: check spelling
+        uses: check-spelling/check-spelling@master
