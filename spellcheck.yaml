@@ -26,7 +26,15 @@ matrix:
   dictionary:
     wordlists:
     - wordlist_en.txt
+    output: wordlist_en.dic
     - wordlist_pt.txt
+    output: wordlist_pt.dic
+    
+#     add-extra-dicts:
+#     - wordlist_en.dic
+#     - wordlist_en.dic
+    
+    
 #     output: wordlist.dic
 #     encoding: utf-8
   pipeline:
