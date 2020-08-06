@@ -24,10 +24,10 @@ matrix:
   expect_match: false
   aspell:
     add-extra-dicts:
-    - wordlist_en.txt
     - wordlist_pt.txt
-    output: wordlist.dic
-    encoding: utf-8
+    - wordlist_en.txt
+#     output: wordlist.dic
+#     encoding: utf-8
   pipeline:
   - pyspelling.filters.javascript:
       jsdocs: false
