@@ -1,9 +1,8 @@
 name: Spelling Internalization
 on:
   pull_request:
-    branches:
-      - develop
-      - master
+    paths:
+    - '**.js'
 jobs:
   check:
     runs-on: ubuntu-latest
