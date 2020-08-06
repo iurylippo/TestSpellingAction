@@ -2,13 +2,15 @@ name: Spelling Internalization
 on:
   pull_request:
     paths:
-    - 'test.js'
+    - '**.js'
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout to branch commit
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
         
       - name: check spelling
         uses: UnicornGlobal/spellcheck-github-actions@master
