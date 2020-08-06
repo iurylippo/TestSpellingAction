@@ -3,8 +3,6 @@ matrix:
   sources:
   - '**/*.json'
   expect_match: false
-  aspell:
-    lang: en
   dictionary:
     wordlists:
     - wordlist.txt
