@@ -1,8 +1,10 @@
 matrix:
-- name: Json EN
+- name: Json
   sources:
   - '**/*.json'
   expect_match: false
+  aspell:
+    lang: en
   dictionary:
     wordlists:
     - wordlist.txt
