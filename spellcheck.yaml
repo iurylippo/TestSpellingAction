@@ -25,8 +25,8 @@ matrix:
   expect_match: false
   dictionary:
     wordlists:
-    - wordlist_pt.txt
     - wordlist_en.txt
+    - wordlist_pt.txt
 #     output: wordlist.dic
 #     encoding: utf-8
   pipeline:
