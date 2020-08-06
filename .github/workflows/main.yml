@@ -2,7 +2,7 @@ name: Spelling Internalization
 on:
   pull_request:
     paths:
-    - '**.js'
+    - 'test.js'
 jobs:
   check:
     runs-on: ubuntu-latest
