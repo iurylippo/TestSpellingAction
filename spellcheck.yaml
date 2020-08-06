@@ -23,10 +23,12 @@ matrix:
 #   - '**/pt_br.json'
   - '**/en.json'
   expect_match: false
+  aspell:
+    lang: en
   dictionary:
     wordlists:
     - wordlist_en.txt
-    output: wordlist_en.dic
+    output: wordlist.dic
     encoding: utf-8
     
 #     - wordlist_pt.txt
